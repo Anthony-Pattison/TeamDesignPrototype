@@ -35,8 +35,7 @@ public class VictimScripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SplineAnimate spline = GetComponent<SplineAnimate>();
-        spline.MaxSpeed = SplineSpeed;
+        
         if (followPlayer)
         {
             transform.position = Player.transform.position + new Vector3(0, 5, 0);
@@ -73,6 +72,8 @@ public class VictimScripts : MonoBehaviour
                 StartCoroutine(Wait(2));
                 return;
             }
+            this.gameObject.transform.GetChild(0).gameObject.transform.position = transform.position;
+
             Audiomanager.PlaySound(Audiomanager.SoundSet[2].Reference);
             VictimRenderer.material = Dead;
             followPlayer = true;
