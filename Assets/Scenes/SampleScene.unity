@@ -1703,8 +1703,8 @@ MonoBehaviour:
   m_PlayOnAwake: 1
   m_LoopMode: 3
   m_Method: 0
-  m_Duration: 15
-  m_MaxSpeed: 3.9279864
+  m_Duration: 20
+  m_MaxSpeed: 2.9459898
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 0
