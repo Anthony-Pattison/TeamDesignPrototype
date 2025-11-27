@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "Custo",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "cd56e4c9-7c7f-4cc1-ac84-bfd8b0410079",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "45171efb-e9b0-493b-8b2a-084105857583",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f2732cb5-5f44-4f08-b6bc-21d38396597c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
