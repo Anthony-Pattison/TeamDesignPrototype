@@ -9,13 +9,20 @@ public class ChangeRooms : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject Camera = GameObject.Find("Main Camera");
-        other.GetComponent<PlayerMovement>().EndCorutines();
-
+        if (other.GetComponent<PlayerMovement>() != null)
+        {
+            other.GetComponent<PlayerMovement>().EndCorutines();
+        }
         Camera.transform.position = NewCameraPos;
         Camera.transform.eulerAngles = CameraPosRotation;
-        
+
         other.transform.position = NewPlayerPos;
         other.transform.eulerAngles = CameraPosRotation;
+
+        if (other.GetComponent<NewPlayerMovement>() != null)
+        {
+            other.GetComponent<NewPlayerMovement>().agent.Warp(NewPlayerPos);
+        }
     }
- 
+
 }

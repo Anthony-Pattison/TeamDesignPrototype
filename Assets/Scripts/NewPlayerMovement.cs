@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class NewPlayerMovement : MonoBehaviour
 {
     Custo input;
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     public LayerMask clickableLayers;
 
