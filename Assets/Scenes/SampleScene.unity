@@ -4291,8 +4291,8 @@ MonoBehaviour:
   NewCameraPos: {x: 0.5, y: 21, z: -18.5}
   CameraPosRotation: {x: 0, y: 0, z: 0}
   dissolvingObject: {fileID: 1547461095}
-  dissolveSpeed: 1
-  dissolveFinishDelay: 0.5
+  dissolveSpeed: 4
+  dissolveFinishDelay: 0.2
 --- !u!114 &1026349125
 MonoBehaviour:
   m_ObjectHideFlags: 0
