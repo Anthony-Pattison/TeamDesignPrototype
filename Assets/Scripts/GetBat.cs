@@ -12,8 +12,8 @@ public class GetBat : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        bat.SetActive(true);
-        this.gameObject.SetActive(false);
+            bat.SetActive(true);
+            this.gameObject.SetActive(false);
     }
     void ResetPlaystate()
     {
